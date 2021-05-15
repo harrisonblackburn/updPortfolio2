@@ -8,19 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel = "stylesheet" href="/style.css">
 </head>
 <body>
     <header>
-        <h1>Harrison Blackburn</h1>
-        <nav>
-            <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#myWork">My Work</a></li>
-                <li><a href="#contactInfo">Contact Info</a></li>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Harrison Blackburn</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#myWork">My Work</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contactInfo">Contact Information</a>
+                  </li>
+                </ul>
                 
-            </ul>
-        </nav>
+              </div>
+            </div>
+          </nav>
     </header>
      <section id="banner">
          <img class="picture" 
@@ -43,7 +58,9 @@
                     in Ohio. I moved to Chicago in 2015 and quickly found myself
                     working in the sales department at a steel company on the
                     south side of the city. After several years of sales 
-                    experience, I passed the Illinois Real Estate Exam in 2019.
+                    experience, I passed the Illinois Real Estate Exam in 2019. 
+                    I am currently enrolled in the Full Stack Web Development program at 
+                    Northwestern University. 
                     </p>
             
                     <p> 
@@ -53,41 +70,29 @@
                     </p>
                </div> 
         </section> 
+
+
+        
         <section id="myWork" class="section">
             <h2 class="sectionTitle">My Work</h2>
             <div class="sectionContainer"></div>
-            <figure>
-                <img class="bigImage" 
-                src="./assets/chicago.jpg"
-                />
-                <figcaption>
-                 <a href= "https://markdrecoll.github.io/drinkUpp/">drinkUpp</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="otherImages"
-                src="assets/meeting.jpg"
-                />
-                <figcaption>
-                    <h3>LED Wall</h3>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="otherImages"
-                src="assets/download.jpg"
-                />
-            </figure> 
-            <figcaption>
-                <h3>Run Buddy</h3>
-            </figcaption>
-            <figure>
-                <img class="otherImages"
-                src="assets/1_MGv5b9bNEIRcYPVxQ50m0Q.jpeg"
-                />
-             <figcaption>
-                 <h3>Calculator</h3>
-             </figcaption>   
-            </figure>
+            
+        <div class="card" style="width: 18rem;">
+            <img src="assets/barman-equipment-such-as-measuring-cups-and-essence-royalty-free-image-1062066858-1557252311.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">drinkUpp</h5>
+              <p class="card-text">An app designed for the casual (or avid) drinker. Enter any ingredient and drinkUpp will return a list of all the beverages which contain said ingredient.</p>
+              <a href="https://markdrecoll.github.io/drinkUpp/" class="btn btn-primary">drinkUpp</a>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/1200px-Circle_of_fifths_deluxe_4.svg.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Scaled</h5>
+              <p class="card-text">An app designed for musicians to practice their notes and scales. The musician will choose a lesson, a note from that scale will appear on the screen, and as the musician plays, the app will return correct or inccorect depending if the user plays that note correctly</p>
+              <a href="https://sleepy-falls-53764.herokuapp.com/" class="btn btn-primary">Scaled</a>
+            </div>
+          </div>
         </section>        
     </main>
 
